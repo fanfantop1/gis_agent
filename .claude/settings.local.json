@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(C:\\\\Users\\\\fanfan\\\\anaconda3\\\\envs\\\\gis_agent\\\\python.exe *)",
+      "Bash(conda search *)",
+      "Bash(Select-String \"pyqt|qt6\")",
+      "Bash(pip install *)",
+      "Bash(C:\\\\Users\\\\fanfan\\\\anaconda3\\\\python.exe *)"
+    ]
+  }
+}

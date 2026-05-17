@@ -1,0 +1,76 @@
+[build-system]
+requires = ["setuptools>=75", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gis_agent"
+version = "0.1.0"
+description = "地理信息科学自然语言助手 — GIS Natural Language Agent"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [{name = "fan"}]
+readme = "README.md"
+
+dependencies = [
+    # GUI
+    "PySide6>=6.7",
+    "qasync>=0.27",
+
+    # LLM
+    "litellm>=1.50",
+    "anthropic>=0.40",
+    "httpx>=0.27",
+
+    # GIS 核心
+    "geopandas>=1.0",
+    "shapely>=2.0",
+    "fiona>=1.9",
+    "pyproj>=3.6",
+
+    # 空间数据库
+    "duckdb>=1.1",
+
+    # 导出
+    "jinja2>=3.1",
+    "markdown>=3.7",
+    "nbformat>=5.10",
+
+    # 工具
+    "pydantic>=2.9",
+    "loguru>=0.7",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8",
+    "pytest-qt>=4.4",
+    "ruff>=0.6",
+]
+raster = [
+    "rasterio>=1.4",
+    "rioxarray>=0.18",
+]
+full = [
+    "rasterio>=1.4",
+    "rioxarray>=0.18",
+    "osmnx>=2.0",
+    "geopy>=2.4",
+    "pystac-client>=0.8",
+    "python-docx>=1.1",
+    "weasyprint>=62",
+    "folium>=0.18",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "W"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+qt-api = "pyside6"
