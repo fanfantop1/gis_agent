@@ -1,4 +1,4 @@
-PyQt6>=6.7
+PySide6>=6.7
 qasync>=0.27
 litellm>=1.50
 anthropic>=0.40

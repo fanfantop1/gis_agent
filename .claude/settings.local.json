@@ -5,7 +5,14 @@
       "Bash(conda search *)",
       "Bash(Select-String \"pyqt|qt6\")",
       "Bash(pip install *)",
-      "Bash(C:\\\\Users\\\\fanfan\\\\anaconda3\\\\python.exe *)"
+      "Bash(C:\\\\Users\\\\fanfan\\\\anaconda3\\\\python.exe *)",
+      "Bash(conda install *)",
+      "Read(//home/fan/miniconda3/envs/gis_agent/share/**)",
+      "Read(//home/fan/miniconda3/envs/gis_agent/share/proj/**)",
+      "Bash(mkdir -p /home/fan/miniconda3/envs/gis_agent/etc/conda/activate.d)",
+      "Bash(echo 'export PROJ_LIB=\"$CONDA_PREFIX/share/proj\"')",
+      "Bash(mkdir -p /home/fan/miniconda3/envs/gis_agent/etc/conda/deactivate.d)",
+      "Bash(echo 'unset PROJ_LIB')"
     ]
   }
 }

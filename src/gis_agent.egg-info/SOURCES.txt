@@ -8,12 +8,17 @@ src/gis_agent.egg-info/requires.txt
 src/gis_agent.egg-info/top_level.txt
 src/gis_agent/agent/__init__.py
 src/gis_agent/bridge/__init__.py
+src/gis_agent/bridge/map_bridge.py
 src/gis_agent/export/__init__.py
 src/gis_agent/gis/__init__.py
 src/gis_agent/llm/__init__.py
 src/gis_agent/llm/backends/__init__.py
 src/gis_agent/tools/__init__.py
 src/gis_agent/ui/__init__.py
+src/gis_agent/ui/chat_panel.py
+src/gis_agent/ui/layer_panel.py
+src/gis_agent/ui/main_window.py
+src/gis_agent/ui/map_view.py
 src/gis_agent/ui/dialogs/__init__.py
 src/gis_agent/utils/__init__.py
 src/gis_agent/utils/config.py
